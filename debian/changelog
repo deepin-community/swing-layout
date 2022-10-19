@@ -1,0 +1,81 @@
+swing-layout (1.0.4-4.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Mon, 28 Dec 2020 12:07:46 +0100
+
+swing-layout (1.0.4-4) unstable; urgency=low
+
+  * Team upload.
+  * Upload to unstable.
+
+ -- tony mancill <tmancill@debian.org>  Mon, 27 May 2013 11:40:08 -0700
+
+swing-layout (1.0.4-3) experimental; urgency=low
+
+  * Install maven metadata.
+  * Use javahelper.
+  * Update Standards-Version to 3.9.4 (no changes required).
+  * Add myself to uploaders.
+  * Remove Michael Koch from uploaders (Closes: #654134).
+  * Remove Niels Thykier from uploaders at his request.
+
+ -- Andrew Ross <ubuntu@rossfamily.co.uk>  Sun, 07 Apr 2013 16:16:48 +0100
+
+swing-layout (1.0.4-2) unstable; urgency=low
+
+  * Team upload.
+  * Remove Marek and Yulia from Uploaders list.
+  * Update Homepage and Standards-Version: 3.9.1.
+  * Remove Java runtime from Depends.
+  * Switch to source format 3.0.
+
+ -- Torsten Werner <twerner@debian.org>  Wed, 31 Aug 2011 22:28:11 +0200
+
+swing-layout (1.0.4-1) unstable; urgency=low
+
+  * New upstream release (Closes: #567325)
+  * debian/rules file is changed to use ant.mk
+  * copyright file "Upstream download" link is corrected
+
+ -- Yulia Novozhilova <Yulia.Novozhilova@sun.com>  Wed, 27 Jan 2010 16:48:28 +0300
+
+swing-layout (1.0.3-2) unstable; urgency=low
+
+  * Added default-jdk to Build-Depends-Indep and set JAVA_HOME to
+    /usr/lib/jvm/default-java. (Closes: #543105).
+  * Added myself to uploaders. 
+  * Bumped debhelper compat to version 7 - No changes required.
+  * Bumped Standards-Version to 3.8.3 - No changes required.
+  * Added missing ${misc:Depends} to all binary Depends. 
+  * Corrected debian/copyright to refer to LGPL-2.1 rather than
+    the versionless LGPL in /usr/share/common-licenses. 
+
+ -- Niels Thykier <niels@thykier.net>  Mon, 24 Aug 2009 19:08:28 +0200
+
+swing-layout (1.0.3-1) unstable; urgency=low
+ 
+  [ Marek Slama ] 
+
+  * Upstream update.
+ 
+  [ Michael Koch ]
+
+  * Removed unneeded versioned build-dependency on ant.
+
+ -- Marek Slama <marek.slama@sun.com>  Thu, 17 Jan 2008 18:00:00 +0100
+
+swing-layout (1.0.2-2) unstable; urgency=low
+
+  * Add Builds-Depends-Indep on unzip. Closes: 439496.
+  * Added myself to Uploaders.
+
+ -- Michael Koch <konqueror@gmx.de>  Sat, 01 Sep 2007 19:56:35 +0200
+
+swing-layout (1.0.2-1) unstable; urgency=low
+
+  * Initial version (Closes: #434525).
+
+ -- Marek Slama <marek.slama@sun.com>  Fri, 13 Jul 2007 10:00:00 +0000
+

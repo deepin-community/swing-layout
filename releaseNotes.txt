@@ -1,0 +1,121 @@
+Release notes for swing-layout (http://swing-layout.dev.java.net)
+
+More information on each of the fixs can be found in the bug reports
+at http://swing-layout.dev.java.net/servlets/ProjectIssues
+
+Special Thanks to our External Contributors
+-------------------------------------------
+Werner Randelshofer
+
+1.0.4 Release (2009/10/27)
+--------------------------
+44: getBaseline methods incorrectly cached
+52: LayoutStyle should not delegate to core on Apple's JDK 6
+
+1.0.3 Release (2007/10/4)
+--------------------------
+46: The contents of the VISUAL_MARGINS structure in AquaLayoutStyle can be
+    inadvertently modified.
+47: Preferred gap between uneditable ComboBoxes is wrong. (Aqua look&feel)
+
+Changed packaging of published ZIP file with sources to include the root folder
+of the whole project.
+
+1.0.2 Release (2007/2/5)
+--------------------------
+25: Visibility handling
+37: Changing visibility of components may result in 0 sized gap
+38: Support baseline alignment of vertical groups
+43: Incorrect parameter passed to super() call
+45: Preferred gaps are not calculated correctly for invisible components
+
+1.0.1 Release (2006/6/7)
+--------------------------
+The following bugs have been fixed:
+
+30: Adding then removing a component can result in an exception
+31: Add a setLayoutStyle method to GroupLayout
+32: Baseline should use instanceof
+33: BASELINE and CENTER constants have the same value
+40: AccessControlException when using GroupLayout in an applet
+42: ComponentOrientation not honored
+
+WARNING: The fix for issue 33 (BASELINE and CENTER constants have the
+same value) has introduced an incompatibility. Prior to fixing 33 both
+constants BASELINE and CENTER had the same value. Because java copies
+the values for integer constants into the byte codes it means if you
+do not recompile with 1.0.1 you may encounter problems. The easy way
+to fix the problem is recompile with 1.0.1 and all will be well.
+
+1.0 Release (2005/12/07)
+--------------------------
+In anticipation of NetBeans 5.0 swing-layout has reached 1.0! The API
+will not incompatability change.
+
+The following bugs have been fixed:
+
+29: replace only works after you've done an initial layout
+
+0.9.5 Release (2005/12/02)
+--------------------------
+The following bugs have been fixed:
+
+22: LayoutStyle should call into Swing's LayoutStyle when runnin
+23: Have better defaults for look and feels not supported by LayoutStyle
+24: src.zip should include other files
+28: GroupLayout doesn't cleanup after removing a component
+
+0.9 Release (2005/11/03)
+--------------------------
+This is primarily a bug fix release.
+
+The following bugs have been fixed:
+
+18: dump should be renamed to toString
+19: Baseline for sliders on OS X is wrong
+20: There is no LayoutStyle for OS X
+21: GroupLayout should allow for negative gaps
+
+0.7.1 Release (2005/10/03)
+--------------------------
+This is primarily a bug fix release.
+
+The following bugs have been fixed:
+
+16: Padding incorrectly calculated in certain situations
+17: Components that have their sized linked do not resize correctly
+
+
+0.7 Release (2005/08/30)
+--------------------------
+This is primarily a bug fix release, although it does contain a bit of
+new API.  The biggest addition is baseline support for OS X.
+
+The following bugs have been fixed:
+4: Need ability to plug in custom instance of Baseline
+15: Add baseline support for OS X
+
+
+0.6.1 Release (2005/08/17)
+--------------------------
+This is primarily a bug fix release.
+
+The following bugs have been fixed:
+
+1: Sample code in class description not working
+2: Error message if component not in vertical and horizontal gr
+6: Autopadding not properly computed
+7: Odd resizing behavior
+8: GroupLayout should work with Container and Components
+9: Having to specify JComponent to LayoutStyle results in lots
+10: Child indent should take into consideration icons for checkb
+11: noop intructions.
+12: ContainerAutopadding incorrectly calculated for non-JCompone
+13: Indent padding for checkboxs/radiobuttons incorrect
+14: ContainerAutopadding incorrectly calculated in certain cases
+
+And the following Enhancements have been fixed:
+
+3: Need ability to provide baseline for custom components
+5: Add ability to get preferred gap for indenting components
+

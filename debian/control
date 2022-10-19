@@ -1,0 +1,47 @@
+Source: swing-layout
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders: Andrew Ross <ubuntu@rossfamily.co.uk>
+Build-Depends: debhelper (>= 9), javahelper (>= 0.40ubuntu1), maven-repo-helper (>= 1.6~)
+Build-Depends-Indep: ant, default-jdk
+Standards-Version: 3.9.4
+Vcs-Svn: svn://svn.debian.org/svn/pkg-java/trunk/swing-layout
+Vcs-Browser: http://svn.debian.org/wsvn/pkg-java/trunk/swing-layout
+Homepage: http://java.net/projects/swing-layout/
+
+Package: libswing-layout-java
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libswing-layout-java-doc
+Description: Extensions to Swing layout
+ The goal of Swing Layout Extensions is to make it easy to create professional
+ cross platform layouts with Swing. This project has an eye towards the needs 
+ of GUI builders, such as NetBeans. This package provides the following
+ functionality:
+ .
+   Ability to get the baseline for components.
+ .
+   Ability to get the preferred gap between components.
+ .
+   A new LayoutManager that utilizes both of these concepts and is tuned toward
+   a free-form drag and drop layout model as can be provided by GUI builders.
+
+Package: libswing-layout-java-doc
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Description: Extensions to Swing layout - contains Javadoc API documentation
+ The goal of Swing Layout Extensions is to make it easy to create professional
+ cross platform layouts with Swing. This project has an eye towards the needs
+ of GUI builders, such as NetBeans. This package provides the following
+ functionality:
+ .
+   Ability to get the baseline for components.
+ .
+   Ability to get the preferred gap between components.
+ .
+   A new LayoutManager that utilizes both of these concepts and is tuned toward
+   a free-form drag and drop layout model as can be provided by GUI builders.
+ .
+ This package contains Javadoc API documentation.
